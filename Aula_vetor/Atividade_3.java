@@ -18,12 +18,19 @@ public class Atividade_3 {
 			System.out.print("Informe os outros valores também:");
 			vetorB[i] = ler.nextInt();
 		}
-		vetorC[10] = vetorA[5] + vetorB[5];
 
-		System.out.println("Os primeiros valores do vetorA são:" + vetorA);
-		System.out.println("Os valores do vetorB são:" + vetorB);
-		System.out.println("Os valores do vetorC são:" + vetorC);
+		for (int i = 0; i < 5; i++) {
+			vetorC[i] = vetorA[i];
+			vetorC[i + 5] = vetorB[i];
+		}
+		for (int i = 0; i < 5; i++) {
+			System.out.println("Os primeiros valores do vetorA são:" + vetorA[i]);
+			System.out.println("Os valores do vetorB são:" + vetorB[i]);
+		}
 
+		for (int i = 0; i < 10; i++) {
+			System.out.println("Os valores do vetorC são:" + vetorC[i]);
+		}
 	}
 
 }
